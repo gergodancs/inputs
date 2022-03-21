@@ -1,13 +1,97 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(190deg, black, rgb(39, 39, 39));
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+.form__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  row-gap: 1rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 3px 3px 4px rgb(3, 3, 3);
+  background-color: #222;
+  transition: all 0.2s ease-in-out;
+}
+form:hover {
+  transform: scale(0.98);
+}
+button {
+  padding: 5px 15px;
+  border: none;
+  background: #ccc;
+  letter-spacing: 0.1em;
+  color: #222;
+  font-weight: 600;
+  box-shadow: 2px 2px 3px black;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+button:hover {
+  box-shadow: 1px 1px 3px black inset, -1px -1px 3px black inset;
+  color: rgb(7, 7, 7);
+}
+input {
+  width: 200px;
+  height: 1.2rem;
+  background-color: rgb(240, 236, 236);
+  border-color: #ccc;
+  outline: none;
+  border-radius: 5px;
+  padding: 0.3rem;
+  font-weight: 600;
+}
+
+input.warning {
+  background: salmon;
+  border-color: red;
+}
+
+.user__container {
+  width: 208px;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  background: #222;
+  color: #ccc;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  box-shadow: 3px 3px 4px black;
+  transition: all 0.2s ease-in-out;
+}
+.user__container:hover {
+  transform: scale(0.9);
+}
+label {
+  color: #ccc;
+  font-weight: 600;
+  letter-spacing: 0.1em;
 }
